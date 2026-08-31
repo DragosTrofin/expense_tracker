@@ -20,8 +20,8 @@ uploads/
 temp/
 
 
-supabase/.temp/
-supabase/.branch/
+src/supabase/.temp/
+src/supabase/.branches/
 *.sqlite
 *.db
 *.dump
