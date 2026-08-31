@@ -18,3 +18,11 @@ Thumbs.db
 
 uploads/
 temp/
+
+
+supabase/.temp/
+supabase/.branch/
+*.sqlite
+*.db
+*.dump
+expense-tracker-api/src/supabase/.temp/start-secrets/supabase_edge_runtime_src/env/docker.env
