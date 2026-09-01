@@ -29,6 +29,8 @@ Fill in the .env file with your actual SUPABASE_URL, SUPABASE_KEY, and a secure 
 
 
 **supabase start**
+
+
 Available Commands
 Start the development server:
 
