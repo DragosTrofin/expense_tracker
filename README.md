@@ -18,25 +18,28 @@ A secure backend API for personal expense management, built with a 3-layer archi
 1. **Install dependencies:**
    ```bash
    npm install
+   ```
 
-**Environment Variables Configuration:**
-Create an environment file using the provided template:
+2. **Environment Variables Configuration:**
+   Create an environment file using the provided template:
+   ```bash
+   cp .env.example .env
+   ```
+   *Fill in the `.env` file with your actual `SUPABASE_URL`, `SUPABASE_KEY`, and a secure `JWT_SECRET`.*
 
-**cp .env.example .env**
-Fill in the .env file with your actual SUPABASE_URL, SUPABASE_KEY, and a secure JWT_SECRET.
+3. **Start the Database (Local Supabase):**
+   ```bash
+   supabase start
+   ```
 
-**Start the Database (Local Supabase):**
+## Available Commands
 
-
-**supabase start**
-
-
-Available Commands
-Start the development server:
-
-
-**npm run dev**
+**Start the development server:**
+```bash
+npm run dev
+```
 
 **Run the automated test suite (Auth & CRUD flows):**
-
-**npm run test**
+```bash
+npm run test
+```
