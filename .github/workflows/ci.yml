@@ -27,6 +27,6 @@ jobs:
       run: npm run test
       env:
         PORT: 3000
-        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-        SUPABASE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        JWT_SECRET: ${{ secrets.JWT_SECRET }}
+        SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+        SUPABASE_KEY: ${{ vars.SUPABASE_SERVICE_ROLE_KEY }}
+        JWT_SECRET: ${{ vars.JWT_SECRET }}
