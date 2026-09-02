@@ -33,7 +33,7 @@ export const createUser = async (email: string, passwordHash: string) => {
 export const blacklistToken = async (token: string) => {
   const { error } = await supabase.from('blacklisted_tokens').insert([{ token }]);
 if (error) {
-    console.log('Motivul exact de la Supabase:', error); // Afișăm eroarea ascunsă
+    console.log('Motivul exact de la Supabase:', error); 
     throw new Error('Eroare la invalidarea token-ului.');
   }};
 
