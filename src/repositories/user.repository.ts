@@ -29,3 +29,15 @@ export const createUser = async (email: string, passwordHash: string) => {
 
   return data;
 };
+
+export const blacklistToken = async (token: string) => {
+  const { error } = await supabase.from('blacklisted_tokens').insert([{ token }]);
+if (error) {
+    console.log('Motivul exact de la Supabase:', error); // Afișăm eroarea ascunsă
+    throw new Error('Eroare la invalidarea token-ului.');
+  }};
+
+export const isTokenBlacklisted = async (token: string) => {
+  const { data } = await supabase.from('blacklisted_tokens').select('token').eq('token', token).single();
+  return !!data;
+};
